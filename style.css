@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+:root {
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary-lighter: hsl(45deg, 100%, 50%);
+  --secondary-darker: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --gray-very-dark: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
 }
 
 html,
@@ -9,4 +22,60 @@ body {
   padding: 0;
 }
 
-/* Add styles here! */
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+strong {
+  color: var(--primary);
+}
+
+header {
+  background-color: var(--white);
+  border-bottom: 8px solid var(--gray-light);
+  padding: 40px 0;
+}
+
+main{
+  background-color: var(--gray-medium);
+  width: 100%;
+}
+
+.max-width-wrapper {
+  padding: 48px 0;
+  margin: auto;
+  max-width: 800px;
+}
+
+.intro-chunk {
+  max-width: 420px;
+  padding: 16px;
+}
+
+.card{
+  margin: auto;
+  background-color: var(--white);
+  padding: 16px;
+  border-bottom: 8px solid var(--gray-light);
+}
+
+.indented-heading {
+  background-color: var(--secondary-lighter);
+  border-bottom: 8px solid var(--secondary-darker);
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: -.5rem 0 0 -2rem;
+}
+
